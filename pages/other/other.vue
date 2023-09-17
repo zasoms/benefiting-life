@@ -1,13 +1,13 @@
 <!-- 滑动切换选项卡演示(标准写法) -->
 <template>
-	
+
 </template>
 
 <script>
 	export default {
 		data() {
 			return {
-				tabList: ['测试1','测试2','测试3','测试4'],
+				tabList: ['测试1', '测试2', '测试3', '测试4'],
 				current: 0, // tabs组件的current值，表示当前活动的tab选项
 			};
 		},
@@ -34,4 +34,3 @@
 		height: 100%;
 	}
 </style>
-

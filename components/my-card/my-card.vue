@@ -10,7 +10,7 @@
 								<view class="name">{{item.name}}</view>
 							</view>
 							<block v-if="item.type==1">
-								<view class="text">天天可领</view>
+								<!-- <view class="text">天天可领</view> -->
 							</block>
 							<block v-else-if="item.type==2">
 								<view class="text">限时秒杀</view>
@@ -133,7 +133,7 @@
 		text-align: left;
 		display: inline-block;
 		vertical-align: bottom;
-		font-size: 34rpx;
+		font-size: 30rpx;
 		color: #000;
 		line-height: 50rpx;
 		font-weight: bold;

@@ -9,8 +9,8 @@
 				<text class="word-btn-white">{{' '+sourceList[sourceIndex].name}}</text>
 			</button>
 			<uni-drawer ref="showLeft" mode="left" :width="120">
-				<button v-for="(item, index) in sourceList" :key="index" @click="changeSource(index, 'showLeft')"
-					plain="true" style="border: none;">
+				<button v-for="(item, index) in sourceList" :key="index" @click="changeSource(index, 'showLeft')" plain="true"
+					style="border: none;">
 					<text class="word-btn-white">{{item.name}}</text>
 				</button>
 			</uni-drawer>
@@ -53,7 +53,9 @@
 </template>
 
 <script>
-	import {config} from '@/common/config.js'
+	import {
+		config
+	} from '@/common/config.js'
 	export default {
 		data() {
 			return {
@@ -62,7 +64,7 @@
 				sourceList: config.sourceList, // 电商平台
 				sourceIndex: 0, // 当前选择电商index
 				nowSourceIndex: 0, // 记录当前页面数据是哪个平台，每次刷新后更新
-				left_list: [],	// 用于双列结构存放左侧商品列
+				left_list: [], // 用于双列结构存放左侧商品列
 				right_list: [], // 用于双列结构存放右侧商品列
 				isLoading: false, // 是否正在请求数据中
 				page: 1 // 当前请求页面
@@ -88,16 +90,14 @@
 			})
 			this.page = this.page + 1
 			this.getShopList()
-			
+
 		},
 		//监听页面滚动
 		onPageScroll(res) {
 			this.scrollTop = res.scrollTop
 		},
-		onShareAppMessage(){
-		},
-		onShareTimeline() {
-		},
+		onShareAppMessage() {},
+		onShareTimeline() {},
 		methods: {
 			// 获取商品数据
 			getShopList(e) {
@@ -177,7 +177,7 @@
 			// 修改平台
 			changeSource(sourceIndex, e) {
 				this.closeDrawer(e)
-				if(this.sourceIndex != sourceIndex) {
+				if (this.sourceIndex != sourceIndex) {
 					this.sourceIndex = sourceIndex
 					uni.showLoading({
 						title: '数据加载中'
@@ -200,7 +200,8 @@
 				uni.navigateTo({
 					url: '/pages/shop_detail/shop_detail?goodsId=' + goodsItem.goodsId + '&shopName=' + goodsItem
 						.shopName + '&source=' + this.sourceList[this.nowSourceIndex].source + '&sourceName=' +
-						this.sourceList[this.nowSourceIndex].name + '&discountType=' + this.sourceList[this.nowSourceIndex].discountType
+						this.sourceList[this.nowSourceIndex].name + '&discountType=' + this.sourceList[this.nowSourceIndex]
+						.discountType
 				})
 			}
 		}

@@ -4,17 +4,17 @@
 </template>
 
 <script>
-	import {config} from '@/common/config.js'
+	import {
+		config
+	} from '@/common/config.js'
 	export default {
 		data() {
 			return {
 				tabs: config.tabs
 			};
 		},
-		onShareAppMessage(){
-		},
-		onShareTimeline() {
-		},
+		onShareAppMessage() {},
+		onShareTimeline() {},
 		methods: {
 			changeTab(tabItem) {
 				this.$refs.card.changeTabId(tabItem.tabId)

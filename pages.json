@@ -1,6 +1,9 @@
 {
 	"pages": [{
-		"path": "pages/home/home"
+		"path": "pages/home/home",
+		"style": {
+			"navigationBarTextStyle": "white"
+		}
 	}, {
 		"path": "pages/shop/shop",
 		"style": {
@@ -26,37 +29,37 @@
 	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "惠生活",
-		"navigationBarBackgroundColor": "#ff5500",
-		"backgroundColor": "#ff5500",
+		"navigationBarTitleText": "惠达人助手",
+		"navigationBarBackgroundColor": "#1c56e7",
+		"backgroundColor": "#1c56e7",
 		"app-plus": {
 			"background": "#efeff4"
 		}
-	},
-	"tabBar": {
-		"list": [{
-				"pagePath": "pages/home/home",
-				"text": "首页",
-				"iconPath": "static/tabbar/home.png",
-				"selectedIconPath": "static/tabbar/home_fill.png"
-			}, {
-			// 	"pagePath": "pages/vip/vip",
-			// 	"text": "低价会员",
-			// 	"iconPath": "static/tabbar/vip.png",
-			// 	"selectedIconPath": "static/tabbar/vip_fill.png"
-			// }, {
-				"pagePath": "pages/shop/shop",
-				"text": "特价商城",
-				"iconPath": "static/tabbar/shopping.png",
-				"selectedIconPath": "static/tabbar/shopping_fill.png"
-			}
-			// ,{
-			// 	"pagePath": "pages/other/other",
-			// 	"text": "我的",
-			// 	"iconPath": "static/tabbar/user.png",
-			// 	"selectedIconPath": "static/tabbar/user_fill.png"
-			// },
-		],
-		"selectedColor": "#ff5500"
 	}
+	// "tabBar": {
+	// 	"list": [{
+	// 			"pagePath": "pages/home/home",
+	// 			"text": "首页",
+	// 			"iconPath": "static/tabbar/home.png",
+	// 			"selectedIconPath": "static/tabbar/home_fill.png"
+	// 		// }, {
+	// 		// 	"pagePath": "pages/vip/vip",
+	// 		// 	"text": "低价会员",
+	// 		// 	"iconPath": "static/tabbar/vip.png",
+	// 		// 	"selectedIconPath": "static/tabbar/vip_fill.png"
+	// 		// }, {
+	// 		// 	"pagePath": "pages/shop/shop",
+	// 		// 	"text": "特价商城",
+	// 		// 	"iconPath": "static/tabbar/shopping.png",
+	// 		// 	"selectedIconPath": "static/tabbar/shopping_fill.png"
+	// 		// }
+	// 		// ,{
+	// 		// 	"pagePath": "pages/other/other",
+	// 		// 	"text": "我的",
+	// 		// 	"iconPath": "static/tabbar/user.png",
+	// 		// 	"selectedIconPath": "static/tabbar/user_fill.png"
+	// 		},
+	// 	],
+	// 	"selectedColor": "#ff5500"
+	// }
 }
